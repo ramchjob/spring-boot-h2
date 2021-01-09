@@ -1,4 +1,4 @@
-package com.sq.learn.services;
+package com.sq.learn.controller;
 
 import java.util.List;
 
