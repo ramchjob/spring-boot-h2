@@ -18,7 +18,7 @@ public class SwaggerConfig extends WebMvcAutoConfiguration {
 
 	@Bean
 	public Docket productApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("ms.services"))
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.sq.learn"))
 				// .paths(regex("/dept.*"))
 				.build().apiInfo(metaData());
 	}
@@ -26,7 +26,7 @@ public class SwaggerConfig extends WebMvcAutoConfiguration {
 	private ApiInfo metaData() {
 		return new ApiInfoBuilder().title("Spring-boot with H2 and Swagger")
 				.description("\"Spring Boot REST API with H2 and Swagger\"")
-				.contact(new Contact("Musawar Saeed", "", "musawar86@gmail.com")).build();
+				.contact(new Contact("Test", "", "Test@gmail.com")).build();
 	}
 
 	protected void addResourceHandlers(ResourceHandlerRegistry registry) {
